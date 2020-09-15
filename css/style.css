@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class^=col-] {
+    padding: 10px;
+ }
+ 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.border {
+    border: .5px solid;
+}
+
+.col-1{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 29%);
+}
+
+.col-4 {
+    width: 33.3%;
+    background: rgb(195,34,34);
+    background: linear-gradient(124deg, rgba(195,34,34,1) 7%, rgba(15,80,147,1) 62%);
+}
+
+.col-5 {
+    width: 30%;
+    background: rgb(195,177,34);
+    background: linear-gradient(124deg, rgba(195,177,34,1) 7%, rgba(28,213,202,1) 41%, rgba(144,58,71,1) 62%);
+
+}
+
+.col-6 {
+    width: 50%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 7%, rgba(15,147,75,1) 19%);
+}
+
+.col-7 {
+    width: 70%;
+    background: rgb(195,177,34);
+    background: linear-gradient(124deg, rgba(195,177,34,1) 7%, rgba(144,58,71,1) 62%);
+}
+
+.col-12 {
+    width: 100%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 58%);
+}
+
+/*===============MEDIA QUERIES===============*/
+
+@media (max-width:1500px) and (min-width:992px) {
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .col-lg-1{
+        width: calc( 100% / 12); 
+    }
+
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .col-md-4 {
+        width: 33.3%;
+    }
+
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 575px) and (min-width:218px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+
+}
+
+
+
